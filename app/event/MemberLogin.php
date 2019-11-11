@@ -5,4 +5,7 @@ namespace app\event;
 
 class MemberLogin
 {
+	public function __construct()
+    {
+    }
 }

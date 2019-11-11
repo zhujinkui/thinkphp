@@ -10,6 +10,7 @@ class Member
 
 	public function onMemberLogin($member)
     {
+        echo '1111';
         // MemberLogin事件响应处理
     }
 

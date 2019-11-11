@@ -2,19 +2,20 @@
 // 事件定义文件
 return [
     'bind'      => [
-        'MemberLogin' => 'app\event\MemberLogin',
+        //'MemberLogin' => 'app\event\MemberLogin',
     ],
 
     'listen'    => [
-        'AppInit'   => [],
-        'HttpRun'   => [],
-        'HttpEnd'   => [],
-        'LogLevel'  => [],
-        'LogWrite'  => [],
-        'MemberLogin' => ['app\listener\MemberLogin'],
+        'AppInit'       => [],
+        'HttpRun'       => [],
+        'HttpEnd'       => [],
+        'LogLevel'      => [],
+        'LogWrite'      => [],
+        'RouteLoaded'   => [],
+        //'MemberLogin' => ['app\listener\MemberLogin'],
     ],
 
     'subscribe' => [
-        'app\subscribe\Member',
+        'app\subscribe\AppInit'
     ],
 ];

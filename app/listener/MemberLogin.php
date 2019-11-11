@@ -12,6 +12,6 @@ class MemberLogin
      */
     public function handle($event)
     {
-        //
-    }    
+    	return $event;
+    }
 }

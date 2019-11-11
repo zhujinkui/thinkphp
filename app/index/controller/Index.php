@@ -3,6 +3,8 @@ declare (strict_types = 1);
 namespace app\index\controller;
 
 use app\BaseController;
+use think\facade\Event;
+use think\facade\Config;
 
 class Index extends BaseController
 {
@@ -12,8 +14,7 @@ class Index extends BaseController
     public function index()
     {
         echo '<pre/>';
-        print_r($this->param);
-        halt($this->request);
+        halt(Config::get());
     }
 
     public function hello($name)
